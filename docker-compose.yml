@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  server:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/usr/share/nginx/html
+      - exception-volumes:/usr/share/nginx/html/target
+
+volumes:
+  exception-volumes:
