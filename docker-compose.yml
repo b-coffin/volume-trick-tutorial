@@ -7,7 +7,4 @@ services:
       - 80:80
     volumes:
       - ./src:/usr/share/nginx/html
-      - exception-volumes:/usr/share/nginx/html/target
-
-volumes:
-  exception-volumes:
+      - ./dummy:/usr/share/nginx/html/target
